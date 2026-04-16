@@ -1,4 +1,4 @@
-# The Bloomin' Corner — Floral Shopping Website
+## The Bloomin' Corner — Floral Shopping Website
 
 A multi-page floral e-commerce website built as part of a Web Programming course. Users can sign up, log in, browse flower collections, customize their own bouquets, add items to cart and checkout — all in a warm, elegant UI with consistent branding.
 
