@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Cart</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body onload="displayCart();checkLogin()">
+
+<header>
+<nav>
+<div class="logo">The Bloomin' Corner</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="flowers.html">Flowers</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Your Cart</h2>
+
+<ul id="cartItems"></ul>
+
+<h3 id="total"></h3>
+
+<button onclick="checkout()" class="checkout-btn">
+Checkout
+</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flowers</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body onload="checkLogin()">
+<header>
+<nav>
+<div class="logo">The Bloomin' Corner</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="flowers.html">Flowers</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="container">
+<h2>Our Flowers</h2>
+
+<div class="flowers-grid">
+
+<!-- 1 -->
+<div class="flower-card">
+<img src="https://tse4.mm.bing.net/th/id/OIP.lw3WagSrTtIj-QrB9AJQNgHaHa">
+<div class="flower-info">
+<h3>Romance Rose Bouquet</h3>
+<p class="price">Rs.2000</p>
+<input type="number" min="1" value="1" id="qty1" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg1" class="msg">
+<button onclick="addToCart('Romance Rose Bouquet',2000,
+document.getElementById('qty1').value,
+document.getElementById('msg1').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="flower-card">
+<img src="https://i.etsystatic.com/33606481/r/il/22d932/3583538922/il_1140xN.3583538922_bjg4.jpg">
+<div class="flower-info">
+<h3>Wedding Bliss</h3>
+<p class="price">Rs.3500</p>
+<input type="number" min="1" value="1" id="qty2" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg2" class="msg">
+<button onclick="addToCart('Wedding Bliss',3500,
+document.getElementById('qty2').value,
+document.getElementById('msg2').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="flower-card">
+<img src="https://i.etsystatic.com/iap/29e902/6727507371/iap_600x600.6727507371_fxikqh0l.jpg">
+<div class="flower-info">
+<h3>Wildflower Dreams</h3>
+<p class="price">Rs.2000</p>
+<input type="number" min="1" value="1" id="qty3" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg3" class="msg">
+<button onclick="addToCart('Wildflower Dreams',2000,
+document.getElementById('qty3').value,
+document.getElementById('msg3').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="flower-card">
+<img src="https://hobbyfloristkl.com/wp-content/uploads/2022/07/Jeannie-800-Mixed-Tulip-Bouquet-KL-01-01-1024x1024.jpeg">
+<div class="flower-info">
+<h3>Tulip Garden</h3>
+<p class="price">Rs.3500</p>
+<input type="number" min="1" value="1" id="qty4" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg4" class="msg">
+<button onclick="addToCart('Tulip Garden',3500,
+document.getElementById('qty4').value,
+document.getElementById('msg4').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="flower-card">
+<img src="https://www.lsflowerdesign.com.au/wp-content/uploads/2020/02/Sunflower-bouquet-e1714645767566.jpeg">
+<div class="flower-info">
+<h3>Sunny Delight</h3>
+<p class="price">Rs.2000</p>
+<input type="number" min="1" value="1" id="qty5" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg5" class="msg">
+<button onclick="addToCart('Sunny Delight',2000,
+document.getElementById('qty5').value,
+document.getElementById('msg5').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="flower-card">
+<img src="https://images.squarespace-cdn.com/content/v1/5ba23f5f45776edaf764b6d6/09cf2ace-e24d-4be4-aada-905df28c073f/Close+up+detail+of+Spring+bridal+bouquet.jpg">
+<div class="flower-info">
+<h3>Spring Mix</h3>
+<p class="price">Rs.2000</p>
+<input type="number" min="1" value="1" id="qty6" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg6" class="msg">
+<button onclick="addToCart('Spring Mix',2000,
+document.getElementById('qty6').value,
+document.getElementById('msg6').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="flower-card">
+<img src="https://blacktulipflowers.in/wp-content/uploads/2024/01/You-rock-my-world-3.png">
+<div class="flower-info">
+<h3>Bloomin Symphony</h3>
+<p class="price">Rs.2000</p>
+<input type="number" min="1" value="1" id="qty7" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg7" class="msg">
+<button onclick="addToCart('Bloomin Symphony',2000,
+document.getElementById('qty7').value,
+document.getElementById('msg7').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="flower-card">
+<img src="https://cdn1.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-mauve-memoir-412293-m.jpg">
+<div class="flower-info">
+<h3>Mauve Memoir</h3>
+<p class="price">Rs.2000</p>
+<input type="number" min="1" value="1" id="qty8" class="qty">
+<input type="text" placeholder="Custom message (optional)" id="msg8" class="msg">
+<button onclick="addToCart('Mauve Memoir',2000,
+document.getElementById('qty8').value,
+document.getElementById('msg8').value)" 
+class="btn btn-primary">Add to Cart</button>
+</div>
+</div>
+
+</div> 
+
+</div>
+
+<h2><center>Customize Your Bouquet 🌸</center></h2>
+
+<div class="custom-card">
+<label>Select Flower:</label>
+<select id="flowerType" onchange="updatePrice()">
+<option value="500">Roses (Rs.500)</option>
+<option value="400">Tulips (Rs.400)</option>
+<option value="300">Sunflowers (Rs.300)</option>
+<option value="350">Mixed Flowers (Rs.350)</option>
+</select>
+
+<label>Select Wrapper:</label>
+<select id="wrapperType" onchange="updatePrice()">
+<option value="100">Paper Wrap (Rs.100)</option>
+<option value="200">Premium Wrap (Rs.200)</option>
+<option value="300">Luxury Wrap (Rs.300)</option>
+</select>
+
+<label>Quantity:</label>
+<input type="number" id="customQty" value="1" min="1">
+
+<label>Custom Message:</label>
+<input type="text" id="customMsg" placeholder="Write your note 💌">
+
+<h3>Total Price: Rs.<span id="totalPrice">600</span></h3>
+
+<button onclick="addCustomToCart()" class="btn btn-primary">
+Add Custom Bouquet
+</button>
+</div>
+
+<footer>
+<div class="footer-content">
+<div class="footer-brand">The Bloomin' Corner</div>
+<p>Bringing nature closer to you, one bouquet at a time.</p>
+</div>
+<div class="footer-bottom">
+<hr>
+<p>© 2025 The Bloomin Corner. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>

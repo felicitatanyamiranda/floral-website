@@ -1,0 +1,740 @@
+/* HEADER */
+
+header{
+background:white;
+position:fixed;
+top:0;
+width:100%;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+
+}
+body{
+padding-top:70px;
+}
+nav{
+max-width:1200px;
+margin:auto;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:bold;
+color:brown;
+letter-spacing:0.5px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#e11d48;
+}
+/* HERO SECTION (INDEX PAGE) */
+
+.hero{
+height:700px;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),
+url("https://static.vecteezy.com/system/resources/thumbnails/032/426/292/small_2x/generative-ai-street-floral-shop-with-colorful-flowers-aesthetic-muted-colors-photo.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content{
+max-width:800px;
+padding:10px;
+}
+
+.hero-content h1{
+font-size:3.5rem;
+margin-bottom:10px;
+font-weight:700;
+}
+
+.hero-content p{
+font-size:1.4rem;
+margin-bottom:30px;
+
+}
+
+
+/* BUTTONS */
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+margin:5px;
+}
+
+.btn-primary{
+background:brown;
+color:white;
+}
+
+.btn-primary:hover{
+background:#8b3a3a;
+transform:translateY(-2px);
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+}
+
+.btn-outline:hover{
+background:white;
+color:#e11d48;
+}
+/* FOOTER */
+
+footer{
+background:#e5cdb3;
+padding:60px 20px 20px;
+margin-top:60px;
+}
+
+.footer-content{
+max-width:1500px;
+margin:auto;	
+gap:40px;
+}
+
+.footer-brand{
+font-size:1.5rem;
+font-weight:bold;
+color:brown;
+margin-bottom:10px;
+}
+.footer-bottom{
+text-align:center;
+margin-top:20px;
+padding-top:10px;
+color:brown;
+font-size:7;
+}
+/*Smooth animations */
+*{
+scroll-behavior:smooth;
+}
+
+/* NAVBAR HOVER EFFECT */
+nav ul li a{
+position:relative;
+} 
+
+nav ul li a::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background:#e11d48;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+nav ul li a:hover::after{
+width:100%;
+}
+
+/* HERO ANIMATION */
+.hero-content{
+animation:fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/*BUTTON GLOW EFFECT *
+.btn-primary{
+box-shadow:0 4px 15px rgba(139,58,58,0.4);
+}
+
+.btn-primary:hover{
+box-shadow:0 6px 20px rgba(139,58,58,0.6);
+}
+*/
+/*FEATURE SECTION  */
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px 20px;
+background:#fff;
+flex-wrap:wrap;
+}
+
+.feature-box{
+background:#fff;
+padding:25px;
+border-radius:15px;
+width:260px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.feature-box h3{
+color:#e11d48;
+margin-bottom:10px;
+}
+
+
+footer{
+background:#e5cdb3;
+padding:60px 20px 20px;
+margin-top:60px;
+}
+
+.footer-bottom{
+font-size:14px; 
+letter-spacing:0.5px;
+}
+
+
+
+-----------------------------------------------------
+/*ABOUT*/
+.about-hero-content h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.about-hero-content p{
+font-size:1.2rem;
+opacity:0.95;
+}
+
+#company-intro{
+padding:80px 20px;
+background:#ffffff;
+text-align:center;
+}
+
+#company-intro h2{
+font-size:2.5rem;
+margin-bottom:20px;
+color:#1f2937;
+}
+
+.company-description{
+max-width:900px;
+margin:auto;
+font-size:1.1rem;
+line-height:1.8;
+color:#555;
+}
+#mission-vision{
+background:#f2e6d9;
+padding:70px 20px;
+}
+
+.mission-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.mission-box,
+.vision-box{
+
+background:white;
+padding:35px;
+
+border-radius:12px;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+transition:0.3s;
+}
+
+.mission-box:hover,
+.vision-box:hover{
+transform:translateY(-5px);
+}
+
+.mission-box h3,
+.vision-box h3{
+color:brown;
+margin-bottom:10px;
+font-size:1.5rem;
+}
+
+.mission-box p,
+.vision-box p{
+color:#555;
+}
+#core-values{
+padding:80px 20px;
+background:white;
+text-align:center;
+}
+
+#core-values h2{
+font-size:2.3rem;
+margin-bottom:40px;
+}
+
+.values-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.value-card{
+
+background:#fff7f1;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.07);
+
+transition:0.3s;
+}
+
+.value-card:hover{
+transform:translateY(-5px);
+}
+
+.value-card h3{
+color:brown;
+margin-bottom:10px;
+}
+
+.value-card p{
+color:#555;
+}
+#business-stats{
+background:#d8b48d;
+padding:80px 20px;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+text-align:center;
+}
+
+.stat-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-card h2{
+font-size:2.5rem;
+color:#e11d48;
+margin-bottom:5px;
+}
+
+.stat-card p{
+color:#444;
+}
+#team-section{
+padding:80px 20px;
+background:#ffffff;
+text-align:center;
+}
+
+#team-section h2{
+font-size:2.3rem;
+margin-bottom:40px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+}
+
+.team-member{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.team-member:hover{
+transform:translateY(-6px);
+}
+
+.team-member img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.team-member h3{
+margin-bottom:5px;
+}
+
+.team-role{
+color:#e11d48;
+font-weight:500;
+margin-bottom:10px;
+}
+
+.team-member p{
+color:#555;
+}
+#customer-promise{
+padding:80px 20px;
+background:#f2e6d9;
+}
+
+.promise-box{
+max-width:800px;
+margin:auto;
+text-align:center;
+}
+
+.promise-box h2{
+font-size:2.3rem;
+margin-bottom:20px;
+color:brown;
+}
+
+.promise-box p{
+font-size:1.1rem;
+color:#555;
+line-height:1.8;
+}
+@media(max-width:768px){
+
+.about-hero-content h1{
+font-size:2rem;
+}
+
+.mission-grid,
+.values-grid,
+.stats-grid,
+.team-grid{
+grid-template-columns:1fr;
+}
+
+}
+---------------------------------------------------------------
+/* CONTACT PAGE */
+/* CONTACT PAGE */
+
+.contact-page{
+padding:60px 20px;
+background:#fdf7f3;
+min-height:80vh;
+}
+
+.contact-header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.contact-header h1{
+font-size:40px;
+color:#5a3e36;
+margin-bottom:10px;
+}
+
+.contact-header p{
+color:#777;
+font-size:18px;
+}
+
+/* container */
+
+.contact-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+/* form box */
+
+.contact-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+width:350px;
+}
+
+.contact-box h2{
+margin-bottom:20px;
+color:#5a3e36;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus{
+outline:none;
+border-color:#d6a6a6;
+}
+
+/* button */
+
+.contact-box button{
+width:100%;
+padding:12px;
+border:none;
+background:#e7bcbc;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-box button:hover{
+background:#d79a9a;
+}
+
+/* contact info */
+
+.contact-info{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+width:300px;
+}
+
+.contact-info h2{
+margin-bottom:20px;
+color:#5a3e36;
+}
+
+.contact-info p{
+margin-bottom:10px;
+color:#555;
+}
+
+.socials{
+margin-top:20px;
+}
+
+.socials span{
+color:#a06b6b;
+cursor:pointer;
+}
+
+/* footer spacing */
+
+.footer-bottom{
+text-align:center;
+padding:20px;
+color:#777;
+font-size:14px;
+}
+/* FLOWERS PAGE */
+
+.container{
+    max-width:1100px;
+    margin:60px auto;
+    padding:20px;
+	text-align:center;
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+    color:#5a2d2d;
+}
+
+.flowers-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:25px;
+    justify-items:center;
+}
+
+.flower-card{
+    width:100%;
+	max-width:260px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.flower-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+.flower-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:0.3s;
+}
+.flower-card:hover img{
+    transform:scale(1.05);
+}
+.flower-info{
+    padding:15px;
+}
+
+.price{
+    color:#b0302f;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.btn{
+    padding:8px 14px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:#5a2d2d;  /* dark brown theme */
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    background:#3e1f1f;
+    transform:translateY(-2px);
+}
+.qty, .msg {
+	width:100%;
+    box-sizing:border-box;
+    margin:8px 0;
+    padding:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    transition:0.3s;
+}
+
+.qty:focus, .msg:focus{
+    border-color:#5a2d2d;
+    outline:none;
+}
+
+.qty {
+width: 60px;
+text-align: center;
+}
+
+
+.custom-card{
+    width:350px;
+    margin:40px auto;
+    padding:25px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.custom-card label{
+display:block;
+margin-top:10px;
+font-weight:500;
+}
+
+.custom-card select,
+.custom-card input{
+width:100%;
+padding:8px;
+margin-top:5px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+------------------------------------------------------------
+/* CART */
+
+#cartItems{
+margin:20px 0;
+list-style:none;
+}
+
+#cartItems li{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+.checkout-btn{
+padding:10px 20px;
+background:brown;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.checkout-btn:hover{
+background:#8b3a3a;
+}
+------------------------------------------------------
+.login-box{
+width:300px;
+margin:100px auto;
+padding:25px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.login-box input{
+width:100%;
+margin:10px 0;
+padding:8px;
+border-radius:5px;
+border:1px solid #ccc;
+}
